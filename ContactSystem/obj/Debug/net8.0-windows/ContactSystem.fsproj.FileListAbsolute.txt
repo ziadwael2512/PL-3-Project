@@ -27,3 +27,4 @@ C:\Users\Hp\OneDrive\Documents\GitHub\PL-3-Project\ContactSystem\obj\Debug\net8.
 C:\Users\Hp\OneDrive\Documents\GitHub\PL-3-Project\ContactSystem\obj\Debug\net8.0-windows\ContactSystem.pdb
 C:\Users\Hp\OneDrive\Documents\GitHub\PL-3-Project\ContactSystem\obj\Debug\net8.0-windows\ContactSystem.genruntimeconfig.cache
 C:\Users\Hp\OneDrive\Documents\GitHub\PL-3-Project\ContactSystem\obj\Debug\net8.0-windows\ref\ContactSystem.dll
+C:\Users\Hp\OneDrive\Documents\GitHub\PL-3-Project\ContactSystem\obj\Debug\net8.0-windows\ContactSystem.sourcelink.json
