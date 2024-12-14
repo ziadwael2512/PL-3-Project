@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "n0R60Z+lRsA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Hp\\OneDrive\\Documents\\GitHub\\PL-3-Project\\ContactSystem\\ContactSystem.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hp\\.nuget\\packages\\fsharp.core\\8.0.403\\fsharp.core.8.0.403.nupkg.sha512"
+  ],
+  "logs": []
+}
