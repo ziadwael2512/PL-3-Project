@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "eMqc2kr+jP4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\IT\\source\\repos\\noor_GUI\\noor_GUI.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\IT\\.nuget\\packages\\fsharp.core\\9.0.100\\fsharp.core.9.0.100.nupkg.sha512",
+    "C:\\Users\\IT\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\IT\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
