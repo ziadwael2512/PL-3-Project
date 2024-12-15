@@ -58,3 +58,4 @@ C:\Users\zyad\Desktop\PL-3-Project\contactSystem\bin\Debug\net8.0-windows\zh-Han
 C:\Users\zyad\Desktop\PL-3-Project\contactSystem\obj\Debug\net8.0-windows\ContactS.61CA27BD.Up2Date
 C:\Users\zyad\Desktop\PL-3-Project\contactSystem\obj\Debug\net8.0-windows\ContactSystem.genruntimeconfig.cache
 C:\Users\zyad\Desktop\PL-3-Project\contactSystem\obj\Debug\net8.0-windows\ref\ContactSystem.dll
+C:\Users\zyad\Desktop\PL-3-Project\contactSystem\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
