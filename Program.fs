@@ -100,7 +100,13 @@ let deleteContactByPhone phone =
     | None ->
         printfn "No contact found with the phone number '%s'." phone
 
-
+let updateContactById (id: int) (newName: string) (newPhone: string) (newEmail: string) =
+    if contacts.ContainsKey id then
+        let updatedContact = { Id = id; Name = newName; PhoneNumber = newPhone; Email = newEmail }
+        contacts <- contacts |> Map.add id updatedContact
+        sprintf "Contact with ID %d updated successfully." id
+    else
+        "Contact not found."
 
 
 //test
