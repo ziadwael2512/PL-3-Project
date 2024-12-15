@@ -1,0 +1,5 @@
+C:\Users\zyad\Desktop\PL-3-Project\obj\Debug\net48\DeleteFunction.fsproj.AssemblyReference.cache
+C:\Users\zyad\Desktop\PL-3-Project\obj\Debug\net48\DeleteFunction.AssemblyInfoInputs.cache
+C:\Users\zyad\Desktop\PL-3-Project\obj\Debug\net48\DeleteFunction.AssemblyInfo.fs
+C:\Users\zyad\Desktop\PL-3-Project\obj\Debug\net48\DeleteFunction.fsproj.CoreCompileInputs.cache
+C:\Users\zyad\Desktop\PL-3-Project\obj\Debug\net48\DeleteFunction.sourcelink.json

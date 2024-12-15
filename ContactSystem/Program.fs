@@ -54,6 +54,66 @@ let createSearchContactForm () =
 
     searchForm
 
+
+// Form for updating a contact
+let createUpdateContactForm () =
+    let updateForm = new Form(Text = "Update Contact", Width = 500, Height = 500, BackColor = Color.LightBlue)
+
+    // Labels and textboxes
+    let idLabel = new Label(Text = "Contact ID:", Top = 20, Left = 30, Font = new Font("Arial", 10.0f, FontStyle.Bold))
+    let idTextBox = new TextBox(Top = 20, Left = 150, Width = 250)
+
+    let nameLabel = new Label(Text = "New Name:", Top = 60, Left = 30, Font = new Font("Arial", 10.0f, FontStyle.Bold))
+    let nameTextBox = new TextBox(Top = 60, Left = 150, Width = 250)
+
+    let phoneLabel = new Label(Text = "New Phone:", Top = 100, Left = 30, Font = new Font("Arial", 10.0f, FontStyle.Bold))
+    let phoneTextBox = new TextBox(Top = 100, Left = 150, Width = 250)
+
+    let emailLabel = new Label(Text = "New Email:", Top = 140, Left = 30, Font = new Font("Arial", 10.0f, FontStyle.Bold))
+    let emailTextBox = new TextBox(Top = 140, Left = 150, Width = 250)
+
+    let updateButton = new Button(Text = "Update Contact", Top = 200, Left = 150, Width = 200, BackColor = Color.LightGreen, Font = new Font("Arial", 10.0f, FontStyle.Bold))
+    let resultLabel = new Label(Top = 260, Left = 30, Width = 400, Height = 150, BorderStyle = BorderStyle.FixedSingle, TextAlign = ContentAlignment.MiddleCenter, Font = new Font("Arial", 12.0f, FontStyle.Bold))
+
+    // Add controls
+    updateForm.Controls.AddRange [| idLabel; idTextBox; nameLabel; nameTextBox; phoneLabel; phoneTextBox; emailLabel; emailTextBox; updateButton; resultLabel |]
+
+    // Event for update button (Logic for updating a contact will go here)
+    updateButton.Click.Add(fun _ -> 
+        // Call your update contact logic here
+        // Example: updateContact(idTextBox.Text, nameTextBox.Text, phoneTextBox.Text, emailTextBox.Text)
+        resultLabel.Text <- "Contact Updated!" // Modify based on your logic
+    )
+
+    updateForm
+
+// Form for deleting a contact
+let createDeleteContactForm () =
+    let deleteForm = new Form(Text = "Delete Contact", Width = 500, Height = 500, BackColor = Color.LightBlue)
+
+    // Labels and textboxes
+    let nameLabel = new Label(Text = "Name:", Top = 20, Left = 60, Font = new Font("Arial", 10.0f, FontStyle.Bold))
+    let nameTextBox = new TextBox(Top = 20, Left = 150, Width = 250)
+
+    let phoneLabel = new Label(Text = "Phone:", Top = 80, Left = 60, Font = new Font("Arial", 10.0f, FontStyle.Bold))
+    let phoneTextBox = new TextBox(Top = 80, Left = 150, Width = 250)
+
+    let deleteButton = new Button(Text = "Delete Contact", Top = 150, Left = 160, Width = 200, BackColor = Color.LightCoral, Font = new Font("Arial", 10.0f, FontStyle.Bold))
+    let resultLabel = new Label(Top = 200, Left = 80, Width = 350, Height = 180, BorderStyle = BorderStyle.FixedSingle, TextAlign = ContentAlignment.MiddleCenter, Font = new Font("Arial", 12.0f, FontStyle.Bold))
+
+    // Add controls
+    deleteForm.Controls.AddRange [| nameLabel; nameTextBox; phoneLabel; phoneTextBox;  deleteButton; resultLabel |]
+
+    // Event for delete button (Logic for deleting a contact will go here)
+    deleteButton.Click.Add(fun _ -> 
+        // Call your delete contact logic here
+        // Example: deleteContact(idTextBox.Text)
+        resultLabel.Text <- "Contact Deleted!" // Modify based on your logic
+    )
+
+    deleteForm
+
+
 // Main Form
 [<EntryPoint>]
 let main argv =
@@ -83,8 +143,8 @@ let main argv =
 
     // Button events (Logic for button clicks)
     addButton.Click.Add(fun _ -> createAddContactForm().ShowDialog() |> ignore)
-    updateButton.Click.Add(fun _ -> MessageBox.Show("Update Contact clicked!", "Info") |> ignore)
-    deleteButton.Click.Add(fun _ -> MessageBox.Show("Delete Contact clicked!", "Info") |> ignore)
+    updateButton.Click.Add(fun _ -> createUpdateContactForm().ShowDialog() |> ignore)
+    deleteButton.Click.Add(fun _ -> createDeleteContactForm().ShowDialog() |> ignore)
     searchButton.Click.Add(fun _ -> createSearchContactForm().ShowDialog() |> ignore)
     displayButton.Click.Add(fun _ -> 
         // Call your display contacts logic here

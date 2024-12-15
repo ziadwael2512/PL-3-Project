@@ -78,8 +78,6 @@ let searchContact (enterd: string) =
         else
             allMatches |> List.iter (fun (_, contact) -> printfn "Found: %A" contact)
 
-
-delete_contact
 // delete contact by name
 let deleteContactByName name =
     let contactToDelete = contacts |> Map.tryFindKey (fun _ contact -> contact.Name = name)
@@ -98,7 +96,7 @@ let deleteContactByPhone phone =
         contacts <- contacts.Remove(id)
         printfn "Contact with phone number '%s' deleted successfully!" phone
     | None ->
-        printfn "No contact found with the phone number '%s'." phone
+        printfn "No contact found with the phone number'%s'."phone
 
 let updateContactById (id: int) (newName: string) (newPhone: string) (newEmail: string) =
     if contacts.ContainsKey id then
@@ -109,21 +107,8 @@ let updateContactById (id: int) (newName: string) (newPhone: string) (newEmail: 
         "Contact not found."
 
 
-//test
-addContact "shahd farag" "98765432111" "shahdfarag@gmail.com"
-addContact "shahd sharaf" "11123456789" "shahdsharaf@gamil.com"
-addContact "fady nabil" "12345678900" "fadynabil@gamil.com"
-addContact "zeyad wael" "00123456789" "zeyadwael@gamil.com"
-addContact "menna abdelnasser" "22334567891" "menna@gmail.com"
-addContact "shahd farag" "88888888888" "shahhhd@gmail.com" // check an exists name
-addContact "shahd " "12223456789" "shahd@gamil.com"   // check an exists phoneNo.
-addContact "nour salah" "123456" "nour@gmail.com" //check phoneNo. less than 11
-addContact "nour salah" "11223344556677" "nour@gmail.com" // check phoneNo. more than 11
-//saveContacts "contacts.json"
-printfn"-----------------------------------------------------\n"
-displayAllContacts()
-printfn"-----------------------------------------------------\n"
-printfn"-----------------------------------------------------\n"
-saveContacts "contacts.json"
+[<EntryPoint>]
+let main argv =
+    displayAllContacts()
+    0 // Return an integer exit code
 
-main
