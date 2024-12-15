@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("searchfun")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27365ba6453f4002d9c555e98c2be6f9989f048f")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("searchfun")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("searchfun")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
