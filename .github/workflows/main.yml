@@ -9,8 +9,8 @@ jobs:
      
      steps:
        - name: print hello
-       - run: echo"hello developer"
+         run: echo"hello developer"
 
        - name: list files
-       - run : ls -al
+         run : ls -al
      
